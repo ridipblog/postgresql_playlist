@@ -1,0 +1,2 @@
+1. SELECT DISTINCT model FROM cars;
+2. SELECT COUNT(DISTINCT model) FROM cars;

@@ -1,0 +1,2 @@
+1. select emp_name,MIN(salary) FROM employes GROUP BY emp_name HAVING MIN(salary) > 85;
+2. SELECT cutsID,COUNT(*) FROM orders GROUP BY cutsID HAVING COUNT(*) > 2;

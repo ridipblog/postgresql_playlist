@@ -1,0 +1,10 @@
+1. BACK TO MAIN MENU OF ALL DATABASE -> \l
+2. CREATE DATABASE -> CREATE DATABASE code;
+3. USE THIS DATABASE -> \c code;
+4. CREATE TABLE -> CREATE TABLE cars(
+        brand VARCHAR(255),
+        model VARCHAR(255),
+        year INT
+    );
+5.SHOW LIST OF TABLE -> \dt
+6.DROP DATABASE -> DROP DATABASE code;

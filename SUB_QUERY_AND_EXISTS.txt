@@ -1,0 +1,13 @@
+1. Sub Query ->
+
+    1. SELECT std_name FROM students WHERE course=(SELECT course_id FROM courses WHERE course_name='JAVA');
+    2. SELECT std_name FROM students WHERE course IN (SELECT course_id FROM courses WHERE course_name IN ('JAVA','PYTHON'));
+2. Exists ->
+    notes. a. If any single records exists then parent command show result
+
+    SELECT std_name FROM students WHERE EXISTS (SELECT course_id FROM courses WHERE course_name IN ('JAVA','PYTHON'));
+
+3. Not Exists ->
+    notes. a. If not any single records exits then paranet command show result
+
+    SELECT std_name FROM students WHERE NOT EXISTS (SELECT course_id FROM courses WHERE course_name IN ('JAVA','PYTHON'));

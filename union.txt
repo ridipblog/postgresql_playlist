@@ -1,0 +1,30 @@
+The UNION operator is used to combine the result-set of two or more queries.
+
+The queries in the union must follow these rules:
+
+They must have the same number of columns
+The columns must have the same data types
+The columns must be in the same order
+ 
+union ->
+    examle ->
+        SELECT product_id, product_name
+        FROM products
+        UNION
+        SELECT testproduct_id, product_name
+        FROM testproducts
+        ORDER BY product_id;
+    example 2 ->
+        SELECT product_id
+        FROM products
+        UNION
+        SELECT testproduct_id
+        FROM testproducts
+        ORDER BY product_id;
+    example 3 ->
+        SELECT product_id
+        FROM products
+        UNION ALL
+        SELECT testproduct_id
+        FROM testproducts
+        ORDER BY product_id;

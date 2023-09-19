@@ -1,0 +1,2 @@
+1. SELECT cutsID,COUNT(*) FROM orders GROUP BY cutsID;
+2. select emp_name,MIN(salary) FROM employes GROUP BY emp_name;

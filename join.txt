@@ -1,0 +1,22 @@
+1. INNER JOIN ->
+    notes. a. The INNER JOIN keyword selects records that have matching values in both tables.
+    notes. b. By using INNER JOIN we will not get the records where there is not a match, we will only get the records that matches both tables:
+    
+     SELECT product_name,category_name FROM product INNER JOIN category ON product.category_id = category.category_id;
+
+2. LEFT JOIN ->
+    notes. a. The LEFT JOIN keyword selects ALL records from the "left" table, and the matching records from the "right" table. The result is 0 records from the right side if there is no match.
+    notes. b. By using LEFT JOIN we will get all records from testpoducts, even the ones with no match in the categories table:
+
+    SELECT product_name,category_name FROM product LEFT JOIN category ON product.category_id = category.category_id;
+
+3. RIGHT JOIN -> 
+    notes. a. The RIGHT JOIN keyword selects ALL records from the "right" table, and the matching records from the "left" table. The result is 0 records from the left side if there is no match.
+    notes. b. By using RIGHT JOIN we will get all records from categories, even the ones with no match in the testproducts table:
+
+    SELECT product_name,category_name FROM product RIGHT JOIN category ON product.category_id = category.category_id;
+4. FULL JOIN ->
+    notes. a. The FULL JOIN keyword selects ALL records from both tables, even if there is not a match. For rows with a match the values from both tables are available, if there is not a match the empty fields will get the value NULL.
+    notes. b. By using FULL JOIN we will get all records from both the categories table and the testproducts table:
+
+    SELECT product_name,category_name FROM product FULL JOIN category ON product.category_id = category.category_id;

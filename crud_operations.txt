@@ -1,0 +1,42 @@
+1. CREATE TABLE -> 
+    CREATE TABLE cars(
+        brand VARCHAR(255),
+        model VARCHAR(255),
+        year INT
+    );
+2. INSERT DATA OPERATION ->
+    INSERT INTO cars(
+        brand,model,year
+    )VALUES(
+        'ford','mustang',1964
+    );
+3. INSERT DATA OPERATION ->
+    INSERT INTO cars(
+        brand,model,year
+    )VALUES(
+        'ford','mustang',1964
+    ),
+    (
+        'ford 1','mustang 2',1964
+    ),
+    (
+        'ford 2','mustang 2',1964
+    );
+4. FETCH DATA OPERATION 1->
+    SELECT * FROM cars;
+5. FETCH DATA OPERATION 2->
+    SELECT model FROM cars;
+6. ADD COLUMN IN TABLE ->
+    ADD TABLE cars ADD color VARCHAR(255);
+7. UPDATE DATA IN TABLE OPERATION 1 ->
+    UPDATE cars SET color ='red' WHERE model ='mustang';
+8. UPDATE DATA IN TABLE OPERATION 2 ->
+    UPDATE cars SET color ='red',YEAR=1970 WHERE model ='mustang';
+9. DROP COLUMN IN TABLE ->
+    ALTER TABLE cars
+    DROP COLUMN color;
+10. DELETE DATA IN TABLE ->
+    DELETE FROM cars
+    WHERE brand = 'ford 1';
+11. DROP TABLE -> 
+    DROP TABLE cars;

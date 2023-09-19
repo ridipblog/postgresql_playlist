@@ -1,0 +1,9 @@
+1.
+    SELECT * FROM cars
+    WHERE brand IN ('frod 3', 'France', 'UK');
+2.
+    SELECT * FROM cars
+    WHERE brand NOT IN ('frod 3', 'France', 'UK');
+3. 
+    SELECT * FROM cars
+    WHERE brand IN (SELECT brand FROM cars);

@@ -1,0 +1,9 @@
+1.
+    SELECT * FROM cars
+    WHERE brand LIKE 'f%';
+2.
+    SELECT * FROM cars
+    WHERE brand LIKE '%f%';
+3. 
+    SELECT * FROM cars
+    WHERE brand LIKE '%f';

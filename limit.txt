@@ -1,0 +1,6 @@
+1.
+    SELECT * FROM cars
+    LIMIT 1;
+2. 
+    SELECT * FROM cars
+    LIMIT 1 OFFSET 2;
